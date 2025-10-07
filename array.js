@@ -89,3 +89,39 @@ console.log(c)
 const replace = [10, 20, 30, 40, 50];
 const rep = replace.splice(2,2,99,100)
 console.log(replace)
+
+
+// Task 15 -> ৫️⃣ নিচের কোডের আউটপুট কী হবে বলে মনে করো?
+let d = [1, 2, 3, 4, 5];
+let e = d.slice(1, 4);
+let f = d.splice(1, 4);
+console.log(d, e, f);
+
+// Task 16 -> ৬️⃣ নিচের অ্যারেতে "banana" রিমুভ করো, কিন্তু আসল অ্যারেটা যেন না পরিবর্তন হয়।
+
+const fruit = ['apple', 'banana', 'cherry'];
+const newfruit = fruit.toSpliced(1,1)
+console.log(newfruit)
+
+// Task 17 -> ৭️⃣ নিচের অ্যারেটাকে উল্টো করে দাও, কিন্তু .reverse() ব্যবহার কোরো না।
+
+// first way 
+const js = ['JS', 'love', 'I']
+const newJs = [];
+for (const ne of js){
+    newJs.unshift(ne)
+}
+console.log(newJs)
+
+// second way
+const newJs2= [];
+ 
+for(let i = js.length ; i>0; i--){
+    newJs2.push(js.pop())
+}
+console.log(newJs2)
+
+// Task 18 -> ৮️⃣ নিচের nested অ্যারে থেকে শুধু "c" প্রিন্ট করো।
+
+const nasted = [['a', 'b'], ['c', 'd'], [['e', f]]]
+console.log(nasted[1][0])
