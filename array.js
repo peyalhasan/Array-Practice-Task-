@@ -20,3 +20,19 @@ console.log(letters[2])     // [index]
 const sentence = ["Learning", "JavaScript", "is", "fun"]
 console.log(sentence.join(' '))
 
+// Task 5 -> ৫️⃣ ["pen", "pencil", "eraser", "sharpener"] থেকে শেষের আইটেমটা সরাও।
+
+const items = ["pen", "pencil", "eraser", "sharpener"];
+const item = items.pop()
+console.log(items)
+
+// Task 6 -> ৬️⃣ উপরের অ্যারেটাতে "marker" যোগ করো শেষে।
+
+items.push('marker')
+console.log(items)
+
+// Task 7 -> ৭️⃣ ["Dhaka", "Chittagong", "Khulna"] অ্যারে থেকে প্রথম আইটেম সরাও।
+
+const city = ["Dhaka", "Chittagong", "Khulna"] ;
+city.shift();
+console.log(city)
