@@ -17,7 +17,7 @@ console.log(fruits.join(','))  // join
 // Task 3 -> ৩️⃣ ["A", "B", "C", "D"] অ্যারে থেকে ৩য় আইটেমটি প্রিন্ট করো।
 
 const letters = ['A', 'B', 'C', 'D']
-console.log(letters.at(2))  // at(index)
+console.log(letters.at(2))  // at(index) .at also take negative value and retrun from end of the array 
 console.log(letters[2])     // [index]
 
 // Task 4 -> ৪️⃣ ["Learning", "JavaScript", "is", "fun"] কে একসাথে করে একটা বাক্য বানাও।
@@ -75,7 +75,7 @@ console.log(numbers)
 //Task 12 -> ২️⃣ নিচের কোডে প্রথম দুইটা আইটেম কপি করে শেষের দিকে বসাও।
 
 const number = [1, 2, 3, 4, 5, 6, 7]
-const copy = number.copyWithin(4, 0, 3) // copy start form 0 and end at 3 and it will replace index 5,6,7
+const copy = number.copyWithin(4, 0, 3) // copy start form 0 and end at 3 and it will replace index 4, 5,6
 console.log(copy)
 
 // Task 13 -> ৩️⃣ [1, [2, 3], [4, [5]]] এই nested অ্যারেটাকে এক লেভেলে নিয়ে আসো।
@@ -87,7 +87,7 @@ console.log(c)
 // Task 14 -> ৪️⃣ নিচের অ্যারে থেকে মাঝের ২টা আইটেম replace করো 99 এবং 100 দিয়ে।
 
 const replace = [10, 20, 30, 40, 50];
-const rep = replace.splice(2,2,99,100)
+const rep = replace.splice(2,2,99,100)  // splice modidy original array
 console.log(replace)
 
 
@@ -100,7 +100,7 @@ console.log(d, e, f);
 // Task 16 -> ৬️⃣ নিচের অ্যারেতে "banana" রিমুভ করো, কিন্তু আসল অ্যারেটা যেন না পরিবর্তন হয়।
 
 const fruit = ['apple', 'banana', 'cherry'];
-const newfruit = fruit.toSpliced(1,1)
+const newfruit = fruit.toSpliced(1,1) // It's return a new array with copyed data
 console.log(newfruit)
 
 // Task 17 -> ৭️⃣ নিচের অ্যারেটাকে উল্টো করে দাও, কিন্তু .reverse() ব্যবহার কোরো না।
